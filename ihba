@@ -1,1 +1,103 @@
-iam abhinya
+######for push#####
+cd "folder name"
+
+git config --user.name  ""
+git config --user.email  ""
+
+git config --global init.defaultBranch main
+
+
+git remote add orgin <url-link>
+
+
+#add files 
+
+
+git add. 
+
+git commit -m "message "
+
+
+git push origin main 
+
+
+ #####For pull ######
+ ##same as above but put pull####
+
+  git pull origin main
+  
+
+
+                    ##### MERGING BRANCHING #########
+
+
+cd "folder name "
+  
+git config --user.name  ""
+git config --user.email  ""
+
+git config --global init.defaultBranch main
+
+
+  
+git remote add origin <url-link>
+
+git checkout -b <branch-name>                 
+
+#####add files /cretae files or changes in files#####
+
+git add.
+
+  git checkout main 
+
+  git merge <branch-name>
+
+git commit -m "message"
+
+git push origin main
+
+
+
+
+                 ##ISSUE##
+
+    cd "folder name"
+
+git config --user.name  ""
+git config --user.email  ""
+
+git config --global init.defaultBranch main
+
+
+git remote add orgin <url-link>
+
+
+#CREATE ISSUSE ON GITHUB 
+    ###make change in file
+        and add to files###
+  git add .
+
+
+git commit -m "Fix#1: resolved"
+git push origin main
+
+
+
+
+
+
+            ### FORK A REPO ###
+
+    git remote add upstream <url-link>
+
+    git fetch upstream 
+
+    git checkout main 
+
+    git checkout main 
+
+    git merge upstream/main
+
+    git commit -m "updateed "
+
+    git push origin  main
